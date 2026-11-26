@@ -1,0 +1,46 @@
+{
+  "loop-N": {
+    "observes": [
+      "N"
+    ],
+    "type": "pressure"
+  },
+  "loop-S": {
+    "observes": [
+      "S"
+    ],
+    "type": "pressure"
+  },
+  "gate": {
+    "observes": [
+      "N",
+      "S"
+    ],
+    "type": "threshold"
+  },
+  "reader": {
+    "observes": [
+      "N",
+      "S"
+    ],
+    "type": "nearfield"
+  },
+  "ground-N": {
+    "observes": [
+      "N"
+    ],
+    "type": "bond"
+  },
+  "ground-S": {
+    "observes": [
+      "S"
+    ],
+    "type": "bond"
+  },
+  "lead": {
+    "type": "manual"
+  },
+  "desk": {
+    "type": "job"
+  }
+}

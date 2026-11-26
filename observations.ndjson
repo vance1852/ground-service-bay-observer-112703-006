@@ -1,0 +1,16 @@
+{"seq": 1, "device": "loop-N", "kind": "pressure", "at": 0, "source_epoch": 1, "bay": "N", "present": true}
+{"seq": 2, "device": "loop-S", "kind": "pressure", "at": 0, "source_epoch": 1, "bay": "S", "present": false}
+{"seq": 3, "device": "gate", "kind": "move", "at": 2, "from": "yard", "to": "N", "unit": "GA-1", "present": true}
+{"seq": 4, "device": "reader", "kind": "radio", "at": 4, "source_epoch": 1, "unit": "GA-1", "rssi": {"N": -49, "S": -51}, "refs": [3]}
+{"seq": 5, "device": "ground-N", "kind": "bond", "at": 7, "bay": "N", "unit": "GA-1", "ok": true}
+{"seq": 6, "device": "desk", "kind": "work", "at": 10, "id": "C-18", "bay": "N", "unit": "GA-1", "type": "inspection", "stage": "start"}
+{"seq": 7, "device": "gate", "kind": "move", "at": 15, "from": "N", "to": "S", "unit": "GA-1", "present": true}
+{"seq": 8, "device": "loop-S", "kind": "pressure", "at": 16, "source_epoch": 1, "bay": "S", "present": true, "refs": [7]}
+{"seq": 9, "device": "loop-N", "kind": "fault", "at": 15, "source_epoch": 1, "bay": "N", "status": "stuck-high", "refs": [1, 7]}
+{"seq": 10, "device": "reader", "kind": "radio", "at": 18, "source_epoch": 2, "unit": "GA-1", "rssi": {"N": -47, "S": -50}, "refs": [7]}
+{"seq": 11, "device": "desk", "kind": "work", "at": 20, "id": "C-20", "bay": "N", "type": "sweep", "stage": "start"}
+{"seq": 12, "device": "ground-S", "kind": "bond", "at": 19, "bay": "S", "unit": "GA-1", "ok": true, "refs": [7]}
+{"seq": 13, "device": "reader", "kind": "radio", "at": 9, "arrived": 22, "source_epoch": 1, "unit": "GA-1", "rssi": {"N": -44}, "refs": [4]}
+{"seq": 14, "device": "lead", "kind": "site_check", "at": 23, "from": 21, "until": 38, "claims": {"N": {"empty": true, "clear_surface": true}}, "ref": "lead-3", "refs": [9, 11]}
+{"seq": 15, "device": "gate", "kind": "move", "at": 32, "from": "yard", "to": "N", "unit": "GA-2", "present": true, "refs": [14]}
+{"seq": 16, "device": "desk", "kind": "work", "at": 34, "id": "C-22", "bay": "N", "type": "sweep", "stage": "start", "refs": [15]}

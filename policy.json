@@ -1,0 +1,33 @@
+{
+  "bays": [
+    "N",
+    "S"
+  ],
+  "neighbors": {
+    "N": [
+      "S"
+    ],
+    "S": [
+      "N"
+    ]
+  },
+  "auto_obs_max_age": 50,
+  "work": {
+    "inspection": {
+      "needs": [
+        "exact_vehicle",
+        "bond"
+      ]
+    },
+    "sweep": {
+      "needs": [
+        "empty",
+        "clear_surface"
+      ]
+    }
+  },
+  "evidence": {
+    "absence": "低压或经过确证的离位，加独立的门侧或限定时段人工凭据",
+    "identity": "标签须有独立位置证据；压力仅证明占用"
+  }
+}
